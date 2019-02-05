@@ -1,22 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <reservation-form></reservation-form>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ReservationForm from './components/ReservationForm.vue';
+//import ReservationFormOldStyle from './components/ReservationFormOldStyle.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+      ReservationForm,
+      //ReservationFormOldStyle
   }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
