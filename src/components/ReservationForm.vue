@@ -150,9 +150,11 @@
                         </div>
 
                         <div class="md-layout-item md-size-50">
+                            <input type="hidden" name="days" v-bind:value="form.days">
                             <md-field>
                                 <label for="movie">Дней</label>
-                                <md-select v-model="form.days" name="days" id="days">
+                                <md-select v-model="form.days" name="select-days" id="days" >
+                                    <md-option value="777">Triple Seven</md-option>
                                     <md-option v-for="item in numbers" :key="item.k" :value="item.k">
                                         {{ item.k }} {{ item.v }}
                                     </md-option>
@@ -339,6 +341,7 @@
                     tour_hotel_id:0,
                     tour_room_id:0,
                     tour_tarif_id:0,
+                    days:null,
 
                     persons:[
 

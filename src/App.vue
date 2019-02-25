@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <reservation-form></reservation-form>
+    <reservation-form-old-style></reservation-form-old-style>
   </div>
 </template>
 
 <script>
-import ReservationForm from './components/ReservationForm.vue';
-//import ReservationFormOldStyle from './components/ReservationFormOldStyle.vue';
+    //import ReservationForm from './components/ReservationForm.vue';
+import ReservationFormOldStyle from './components/ReservationFormOldStyle.vue';
 
 export default {
   name: 'app',
   components: {
-      ReservationForm,
-      //ReservationFormOldStyle
+      //ReservationForm,
+      ReservationFormOldStyle
   }
 }
 </script>
